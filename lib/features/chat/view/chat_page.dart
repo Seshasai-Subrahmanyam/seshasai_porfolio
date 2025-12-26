@@ -321,13 +321,16 @@ class _MessageBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final isSmallScreen = width < 600;
+
     return Align(
       alignment: message.isUser ? Alignment.centerRight : Alignment.centerLeft,
       child: Container(
         margin: const EdgeInsets.only(bottom: AppTheme.spacingSm),
         padding: const EdgeInsets.all(AppTheme.spacingMd),
         constraints:
-            BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.7),
+            BoxConstraints(maxWidth: width * (isSmallScreen ? 0.85 : 0.7)),
         decoration: BoxDecoration(
           color: message.isUser
               ? AppTheme.primaryBlue.withValues(alpha: 0.1)
@@ -345,7 +348,16 @@ class _MessageBubble extends StatelessWidget {
                 child: MarkdownBody(
                   data: message.content,
                   styleSheet: MarkdownStyleSheet(
-                    p: const TextStyle(color: AppTheme.textSecondary),
+                    p: TextStyle(
+                        color: AppTheme.textSecondary,
+                        fontSize: isSmallScreen ? 13 : 14),
+                    tableBody: TextStyle(
+                        color: AppTheme.textSecondary,
+                        fontSize: isSmallScreen ? 12 : 14),
+                    tableHead: TextStyle(
+                        color: AppTheme.textPrimary,
+                        fontWeight: FontWeight.bold,
+                        fontSize: isSmallScreen ? 12 : 14),
                   ),
                 ),
               ),

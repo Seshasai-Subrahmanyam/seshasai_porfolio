@@ -216,7 +216,7 @@ class _HeroSection extends StatelessWidget {
 
   void _downloadResume(BuildContext context) async {
     const resumeUrl =
-        'https://res.cloudinary.com/dh07ur7yz/image/upload/v1766755784/Seshasai_nagadevara_resume_2025_2_sqe06o.pdf';
+        'https://res.cloudinary.com/dh07ur7yz/image/upload/Seshasai_nagadevara_resume_2025_2_sqe06o.pdf';
     //'https://res.cloudinary.com/dh07ur7yz/image/upload/v1766655596/Seshasai_nagadevara_resume_2025_2_sqe06o.pdf';
     try {
       final url = Uri.parse(resumeUrl);
