@@ -115,7 +115,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         return [
           'Do you want a deep dive on my Flutter architecture choices (SOLID + BLoC, modularization, navigation) or on security (ECDH, HMAC derivation, AES-GCM)?',
           'Should I walk through an end-to-end onboarding flow implementation (document capture, OCR extraction, liveness, face match) and how it integrates with backend APIs (gRPC/FastAPI)?',
-          'What are your expectations around quality engineering—unit/widget/integration tests, CI/CD, code standards, and release practices?'
+          'What are your expectations around documentation, code analysis, and best practices?'
         ];
 
       case ChatPersona.founder:

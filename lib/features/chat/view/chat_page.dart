@@ -259,13 +259,16 @@ class _ToggleRow extends StatelessWidget {
                 // ${p.icon}
                 //  }',
                 ),
-            // Mode
-            _DropdownToggle<ChatMode>(
-              label: 'Mode',
-              value: state.mode,
-              items: ChatMode.values,
-              onChanged: (m) => context.read<ChatBloc>().add(ChangeMode(m)),
-              itemBuilder: (m) => m.displayName,
+            // Mode (static display - only RAG is available)
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
+              decoration: BoxDecoration(
+                  color: AppTheme.bgSurface,
+                  borderRadius: BorderRadius.circular(AppTheme.radiusSmall)),
+              child: Text(
+                state.mode.displayName,
+                style: const TextStyle(fontSize: 13, color: Colors.white60),
+              ),
             ),
           ],
         );
@@ -349,10 +352,10 @@ class _MessageBubble extends StatelessWidget {
                   data: message.content,
                   styleSheet: MarkdownStyleSheet(
                     p: TextStyle(
-                        color: AppTheme.textSecondary,
+                        color: const Color.fromARGB(255, 180, 180, 186),
                         fontSize: isSmallScreen ? 13 : 14),
                     tableBody: TextStyle(
-                        color: AppTheme.textSecondary,
+                        color: const Color.fromARGB(255, 180, 180, 186),
                         fontSize: isSmallScreen ? 12 : 14),
                     tableHead: TextStyle(
                         color: AppTheme.textPrimary,

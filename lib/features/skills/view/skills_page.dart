@@ -89,6 +89,24 @@ class _SkillsPageState extends State<SkillsPage> {
                 const SizedBox(height: AppTheme.spacingSm),
                 Text('Technical expertise and proficiencies',
                     style: Theme.of(context).textTheme.bodyLarge),
+                const SizedBox(height: AppTheme.spacingXs),
+                Row(
+                  children: [
+                    Icon(Icons.touch_app_rounded,
+                        size: 14, color: AppTheme.textMuted),
+                    const SizedBox(width: 4),
+                    Text(
+                      isDesktop
+                          ? 'Click on a skill to know more'
+                          : 'Tap a skill to know more',
+                      style: TextStyle(
+                        color: AppTheme.textMuted,
+                        fontSize: 12,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                  ],
+                ),
                 const SizedBox(height: AppTheme.spacingXl),
 
                 // All categories with their skills
@@ -196,17 +214,23 @@ class _SkillChipState extends State<_SkillChip> {
 
   @override
   Widget build(BuildContext context) {
+    final isMobile = MediaQuery.of(context).size.width < 600;
+
     return MouseRegion(
+      cursor: SystemMouseCursors.click,
       onEnter: (_) => setState(() => _isHovered = true),
       onExit: (_) => setState(() => _isHovered = false),
       child: GestureDetector(
         onTap: widget.onTap,
         child: AnimatedContainer(
           duration: AppTheme.animFast,
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          transform: Matrix4.identity()..scale(_isHovered ? 1.03 : 1.0),
+          transformAlignment: Alignment.center,
+          padding: EdgeInsets.symmetric(
+              horizontal: isMobile ? 12 : 16, vertical: isMobile ? 8 : 10),
           decoration: BoxDecoration(
             color: widget.isSelected
-                ? AppTheme.primaryBlue.withValues(alpha: 0.1)
+                ? AppTheme.primaryBlue.withValues(alpha: 0.15)
                 : _isHovered
                     ? AppTheme.bgSurface
                     : AppTheme.bgCard,
@@ -214,19 +238,45 @@ class _SkillChipState extends State<_SkillChip> {
             border: Border.all(
                 color: widget.isSelected
                     ? AppTheme.primaryBlue
-                    : AppTheme.textMuted.withValues(alpha: 0.2)),
+                    : _isHovered
+                        ? AppTheme.primaryBlue.withValues(alpha: 0.4)
+                        : AppTheme.textMuted.withValues(alpha: 0.2),
+                width: widget.isSelected || _isHovered ? 1.5 : 1),
+            boxShadow: _isHovered || widget.isSelected
+                ? [
+                    BoxShadow(
+                      color: AppTheme.primaryBlue.withValues(alpha: 0.15),
+                      blurRadius: 8,
+                      offset: const Offset(0, 2),
+                    )
+                  ]
+                : null,
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(widget.skill.name,
                   style: TextStyle(
-                      color: widget.isSelected
+                      color: widget.isSelected || _isHovered
                           ? AppTheme.primaryBlue
                           : AppTheme.textPrimary,
-                      fontWeight: FontWeight.w500)),
-              const SizedBox(width: 8),
+                      fontWeight: FontWeight.w500,
+                      fontSize: isMobile ? 13 : 14)),
+              SizedBox(width: isMobile ? 6 : 8),
               _ProficiencyDots(level: widget.skill.proficiencyLevel),
+              SizedBox(width: isMobile ? 4 : 6),
+              // Arrow indicator to show it's clickable
+              AnimatedOpacity(
+                duration: AppTheme.animFast,
+                opacity: _isHovered || widget.isSelected ? 1.0 : 0.4,
+                child: Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: isMobile ? 10 : 12,
+                  color: widget.isSelected || _isHovered
+                      ? AppTheme.primaryBlue
+                      : Colors.white60,
+                ),
+              ),
             ],
           ),
         ),

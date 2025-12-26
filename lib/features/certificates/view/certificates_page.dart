@@ -217,11 +217,11 @@ class _CertificateCardState extends State<_CertificateCard> {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withValues(alpha: 0.1),
-                      Colors.black.withValues(alpha: 0.6),
-                      Colors.black.withValues(alpha: 0.9),
+                      Colors.black.withValues(alpha: 0.3), // Darkened from 0.1
+                      Colors.black.withValues(alpha: 0.8), // Darkened from 0.6
+                      Colors.black.withValues(alpha: 1.0), // Darkened from 0.9
                     ],
-                    stops: const [0.0, 0.6, 1.0],
+                    stops: const [0.0, 0.5, 1.0],
                   ),
                 ),
               ),
@@ -278,23 +278,76 @@ class _CertificateCardState extends State<_CertificateCard> {
                             fontSize: 12)),
                     if (widget.certificate.description != null &&
                         widget.certificate.description!.isNotEmpty)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8),
-                        child: Text(
-                          widget.certificate.description!,
-                          style: TextStyle(
-                            color: Colors.white.withValues(alpha: 0.7),
-                            fontSize: 12,
-                            height: 1.4,
-                          ),
-                        ),
-                      ),
+                      _ExpandableDescription(
+                          text: widget.certificate.description!),
                   ],
                 ),
               ),
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _ExpandableDescription extends StatefulWidget {
+  final String text;
+  const _ExpandableDescription({required this.text});
+
+  @override
+  State<_ExpandableDescription> createState() => _ExpandableDescriptionState();
+}
+
+class _ExpandableDescriptionState extends State<_ExpandableDescription> {
+  bool _isExpanded = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          AnimatedCrossFade(
+            firstChild: Text(
+              widget.text,
+              style: TextStyle(
+                color: Colors.white.withValues(alpha: 0.7),
+                fontSize: 12,
+                height: 1.4,
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+            secondChild: Text(
+              widget.text,
+              style: TextStyle(
+                color: Colors.white.withValues(alpha: 0.7),
+                fontSize: 12,
+                height: 1.4,
+              ),
+            ),
+            crossFadeState: _isExpanded
+                ? CrossFadeState.showSecond
+                : CrossFadeState.showFirst,
+            duration: AppTheme.animNormal,
+          ),
+          if (widget.text.length > 100) // Only show button for long text
+            GestureDetector(
+              onTap: () => setState(() => _isExpanded = !_isExpanded),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: Text(
+                  _isExpanded ? 'Show less' : 'Show more',
+                  style: const TextStyle(
+                      color: AppTheme.primaryPurple,
+                      fontSize: 11,
+                      fontWeight: FontWeight.w600),
+                ),
+              ),
+            ),
+        ],
       ),
     );
   }
