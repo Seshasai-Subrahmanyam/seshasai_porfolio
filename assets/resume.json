@@ -1,0 +1,523 @@
+{
+  "personalInfo": {
+    "name": "Seshasai Nagadevara",
+    "title": "Senior Flutter Developer & Generative AI Engineer",
+    "summary": "Senior Software Engineer with 7 years of hands-on experience specialising in full-stack mobile architecture and generative AI engineering. Expert in designing and deploying secure, scalable Flutter applications using SOLID principles and advanced state management patterns. Proven track record building autonomous AI agents, multi-agent systems(MAS), and LLM-powered workflows. Demonstrated leadership in architecting next-generation fintech solutions integrating cutting-edge AI technologies, including document processing, face recognition, and intelligent automation systems.",
+    "email": "nvsseshasai@gmail.com",
+    "phone": "+91 7013869169",
+    "location": "Andhra Pradesh, India",
+    "linkedIn": "https://linkedin.com/in/seshasai-subrahmanyam-48b2512b4",
+    "github": "https://github.com/Seshasai-Subrahmanyam",
+    "medium": "https://medium.com/@nvsseshasai",
+    "profileImageUrl": "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766685849/my_face_zn0pmg.jpg",
+    "availability": "OPEN_FOR_WORK",
+    "availabilityUpdated": "2025-12-26T00:00:00Z"
+  },
+  "experiences": [
+    {
+      "id": "exp_1",
+      "company": "TRUEID",
+      "title": "Lead Flutter App Developer & Generative AI Engineer",
+      "startDate": "2023",
+      "endDate": "Present",
+      "isCurrent": true,
+      "location": "India",
+      "highlights": [
+        "Architected and developed the AeonPay mobile banking application from inception based on SOLID principles and BLoC state management.",
+        "Implemented end-to-end security protocols (ECDH, HMAC, AES-GCM) to protect sensitive financial data.",
+        "Innovated development lifecycle by creating an autonomous AI multi-agent system (LightHouse) increasing productivity by 40%.",
+        "Developed a secure backend server using Modal Context Protocol (MCP) for digital onboarding workflows.",
+        "Architected gRPC-based app-to-server API communication for high-performance image transfer and real-time data synchronisation in banking workflows",
+        "Built a streamlined 2-step digital onboarding app, reducing customer friction.",
+        "Implemented advanced security checks including document authenticity and face liveness detection."
+      ],
+      "technologies": [
+        "Flutter",
+        "BLoC",
+        "Dio",
+        "Python",
+        "MCP",
+        "FastMCP",
+        "Google ADK",
+        "A2A Protocol",
+        "FastAPI",
+        "Generative AI",
+        "LangChain",
+        "ReAct Context Engineering",
+        "LLM Tool Calling",
+        "CNN Object Detection",
+        "YOLO Object Detection",
+        "MediaPipe & OpenCV"
+      ]
+    },
+    {
+      "id": "exp_2",
+      "company": "Kellton Pvt Ltd",
+      "title": "Software Engineer",
+      "startDate": "2022",
+      "endDate": "2023",
+      "isCurrent": false,
+      "location": "India",
+      "highlights": [
+        "Engineered core features for the Canara HSBC Insurance application across mobile and web platforms ensuring cross-platform consistency.",
+        "Architected application state management using Getx framework.",
+        "Developed and maintained internal Flutter component libraries, reducing development time by 30%."
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Getx",
+        "Firebase"
+      ]
+    },
+    {
+      "id": "exp_3",
+      "company": "Snapwork Technologies Pvt Ltd",
+      "title": "Software Engineer",
+      "startDate": "2021",
+      "endDate": "2022",
+      "isCurrent": false,
+      "location": "India",
+      "highlights": [
+        "Developed and maintained key features for the high-traffic HDFC Securities trading application.",
+        "Implemented BLoC state management framework for complex financial application states."
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "BLoC",
+        "Firebase",
+        "Flutter Flow"
+      ]
+    },
+    {
+      "id": "exp_4",
+      "company": "Imagtorel Technologies Pvt Ltd",
+      "title": "Flutter Developer & Founding Member",
+      "startDate": "2018",
+      "endDate": "2021",
+      "isCurrent": false,
+      "location": "India",
+      "highlights": [
+        "Operated as a full-time freelance developer and core founding member, managing complete project lifecycles."
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart"
+      ]
+    },
+    {
+      "id": "exp_5",
+      "company": "Juspay Technologies Pvt Ltd",
+      "title": "Software Engineer Intern",
+      "startDate": "2017",
+      "endDate": "2018",
+      "isCurrent": false,
+      "location": "India",
+      "highlights": [
+        "Contributed to core development of BHIM UPI, India's national digital payment platform."
+      ],
+      "technologies": [
+        "Android",
+        "JavaScript"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill_1",
+      "name": "Generative AI",
+      "category": "Generative AI & LLM Engineering",
+      "proficiencyLevel": 5,
+      "yearsOfExperience": 3,
+      "description": "LangChain, Google ADK,A2A Protocol, OpenAI Agent SDK, GenKit, n8n, Make.com, MCProtocol, FastMCP, Prompt Engineering."
+    },
+    {
+      "id": "skill_2",
+      "name": "Flutter & Mobile",
+      "category": "Mobile Development",
+      "proficiencyLevel": 5,
+      "yearsOfExperience": 7,
+      "description": "Cross-Platform (iOS, Android, Web, Desktop), BLoC, Getx, SOLID, MVVM, Platform Channels"
+    },
+    {
+      "id": "skill_3",
+      "name": "Computer Vision",
+      "category": "AI & ML",
+      "proficiencyLevel": 4,
+      "yearsOfExperience": 4,
+      "description": "Deep Learning-CNN, Tensorflow, OpenCV, YOLO v11, Object Detection, Pose Estimation."
+    },
+    {
+      "id": "skill_4",
+      "name": "Python & Backend",
+      "category": "Backend & APIs",
+      "proficiencyLevel": 4,
+      "yearsOfExperience": 5,
+      "description": "FastAPI, REST APIs, gRPC, Telegram Bot API, Firebase, Podman"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert_1",
+      "name": "Google-Kaggle Agents Intensive Capstone Certificate",
+      "issuer": "Google",
+      "description": "Earned the 5-Day AI Agents Intensive Course with Google Badge and capstone certificate.",
+      "issueDate": "2025",
+      "credentialUrl": "",
+      "badgeUrl": "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766339416/5-Day_AI_Agents_Intensive_Course_with_Google_mczrop.png"
+    },
+    {
+      "id": "cert_2",
+      "name": "BLR AI Hackday - Agentic Workflow & Vibe Coding Web App",
+      "issuer": "BLR AI Hackday",
+      "issueDate": "2025",
+      "description": "Built agentic workflow and web app using Make.com, Lovable, and Antigravity at #BLRAIHACKDAY. Demonstrated 'Vibe Coding' paradigm where imagination replaces traditional syntax, exploring the future of no-code agentic workflows and rapid AI application development.",
+      "credentialUrl": "",
+      "badgeUrl": "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766672636/Screenshot_2025-12-25_at_7.53.25_PM_s7lamm.png"
+    },
+    {
+      "id": "cert_3",
+      "name": "Project ASTRA - AI Navigation Assistant",
+      "issuer": "Cactus X Nothing X HuggingFace",
+      "issueDate": "2025",
+      "description": "AI Navigation Assistant for DeafBlind | Flutter, Cactus SDK, On-Device AI — Developed a 100% offline mobile app using dual AI models (LFM2-VL for vision, Qwen3 for tool calling) that analyses camera recordings and provides real-time environmental awareness through Morse code haptics, TTS voice guidance, and hardware volume button control. Built for Cactus X Nothing X HuggingFace Hackathon with multi-frame video analysis to detect moving hazards and a local agent system for intelligent decision-making.",
+      "credentialUrl": "",
+      "badgeUrl": "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766342795/Screenshot_2025-12-22_at_12.16.05_AM_vhygjv.png"
+    },
+    {
+      "id": "cert_4",
+      "name": "n8n Certified Level 2 Flowgrammer",
+      "issuer": "n8n",
+      "issueDate": "2025",
+      "description": "Earned the 5-Day AI Agents Intensive Course with Google Badge and capstone certificate.",
+      "credentialUrl": "",
+      "badgeUrl": "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766339459/Screenshot_2025-09-08_at_11.45.18_AM_fugufp.png"
+    }
+  ],
+  "apps": [
+    {
+      "id": "app_1",
+      "name": "Apple Satellite Application",
+      "description": "Notifications/calls mirroring for iOS devices.",
+      "iconUrl": "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766685816/apple_satellite_lg7bhz.svg",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seshasai.apple_satellite&pcampaignid=web_share"
+    },
+    {
+      "id": "app_2",
+      "name": "Scaffolder desktop Application",
+      "description": "GUI for automating Flutter project setup.",
+      "iconUrl": "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766685812/scaffolder_pqyfcd.svg",
+      "webUrl": "https://scaffolder-app.web.app/"
+    },
+    {
+      "id": "app_3",
+      "name": "Canara HSBC Insurance Application",
+      "description": "Insurance application serving thousands of users.",
+      "iconUrl": "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766685816/canara_vtmbl4.svg",
+      "appStoreUrl": "https://apps.apple.com/in/app/canara-hsbc-life/id1637840399",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.choiceapp.genius&pcampaignid=web_share"
+    },
+    {
+      "id": "app_4",
+      "name": "HDFC Invest Right",
+      "description": "Investment and portfolio management application.",
+      "iconUrl": "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766685813/hdfc_lbvua1.svg",
+      "appStoreUrl": "https://apps.apple.com/in/app/hdfc-securities-investright/id1666228571",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hsl.investright&pcampaignid=web_share"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_1",
+      "title": "LightHouse — Autonomous AI Multi-Agent System for Code Intelligence",
+      "description": "An advanced multi-agent platform leveraging Google ADK, A2A communication, and MCP protocols to automate code analysis, documentation generation, and security audits. Enhanced developer productivity by 40% through context-aware code insights and architecture extraction.",
+      "technologies": [
+        "Flutter",
+        "Google ADK",
+        "Python",
+        "A2A",
+        "MCP",
+        "LLM Integration"
+      ],
+      "category": "AI / Tooling",
+      "featured": true,
+      "videoDemoUrl": "https://youtu.be/W5fyjXhetIo",
+      "demoScreenshots": [
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766691315/light_house_1_ps6sof.png",
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766691316/light_house_2_jojx0x.png",
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766691317/light_house_3_ksx8wn.png",
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766691318/light_house_4_ycvlwj.png"
+      ]
+    },
+    {
+      "id": "proj_2",
+      "title": "AI-Powered Onboarding MCP Server — Autonomous AI Backend Orchestrator",
+      "description": "Secure Modal Context Protocol (MCP) backend server coordinating digital onboarding workflows with AI services (Document OCR, Face Liveness, Face Match) via Claude 4.5 LLM integration. Utilizes FastMCP, Google ADK, and advanced context engineering for enterprise financial security.",
+      "technologies": [
+        "Python",
+        "Modal Context Protocol (MCP)",
+        "FastMCP",
+        "Claude 4.5",
+        "Google ADK",
+        "Context Engineering"
+      ],
+      "category": "AI / Backend",
+      "featured": true,
+      "videoDemoUrl": "https://youtu.be/Q_GEY43AGWA",
+      "demoScreenshots": []
+    },
+    {
+      "id": "proj_3",
+      "title": "Scaffolder — Flutter Project Automation Desktop Tool",
+      "description": "Cross-platform desktop application (Windows/macOS) that automates Flutter project setup via a GUI, standardizing architecture and boilerplate. Uses BLoC-driven state management and Dart process commands to generate new projects, features, and modules, reducing initial setup time by up to 80%.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "BLoC",
+        "Desktop (Windows/macOS)",
+        "Process Automation"
+      ],
+      "category": "Developer Tooling",
+      "featured": true,
+      "videoDemoUrl": "https://youtu.be/0TJ3ztjKWls",
+      "demoScreenshots": [
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766728255/scaffolder_2_bwv6yh.png",
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766728255/scaffolder_1_t1qgvq.png"
+      ]
+    },
+    {
+      "id": "proj_4",
+      "title": "Project ASTRA — On-Device AI Navigation Assistant for DeafBlind",
+      "description": "Accessibility-focused Flutter app using dual on-device AI models (LFM2-VL for vision, Qwen3 for local tool-calling) to provide real-time environmental awareness for DeafBlind users. Performs multi-frame video analysis to detect moving hazards and uses a local agent system to drive Morse code haptics, TTS guidance, and hardware button controls, operating 100% offline for reliable, private navigation support.",
+      "technologies": [
+        "Flutter",
+        "Cactus SDK",
+        "On-Device AI",
+        "LFM2-VL",
+        "Qwen3",
+        "Edge Inference"
+      ],
+      "category": "AI / Accessibility",
+      "featured": true,
+      "videoDemoUrl": "https://youtu.be/SI7P7B6aK88",
+      "demoScreenshots": [
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766728255/astra_demo_jz9g2j.png"
+      ]
+    },
+    {
+      "id": "proj_5",
+      "title": "Apple Satellite Companion App — BLE-based iPhone Mirror for Android",
+      "description": "Developed an Android companion app using BLE to mirror iPhone notifications and calls on Android, improving user safety while riding. Engineered using Flutter isolates for background execution and Firebase for messaging and crash analytics.",
+      "technologies": [
+        "Flutter",
+        "Firebase",
+        "BLE",
+        "Isolates",
+        "Local Notifications"
+      ],
+      "category": "Mobile",
+      "featured": true,
+      "videoDemoUrl": "https://youtube.com/shorts/4H_bsT_l6Yw?feature=share",
+      "demoScreenshots": [
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766728254/apple_satellite_k20gds.jpg"
+      ]
+    },
+    {
+      "id": "proj_6",
+      "title": "LinkedIn Content Automation Agent — Autonomous Social Workflow Orchestrator",
+      "description": "Certified n8n Level 2 Flowgrammer project automating the entire LinkedIn content lifecycle. Fetches topics from Google Sheets, generates and summarizes posts via LLM APIs, creates visuals, posts automatically on LinkedIn, and updates Google Sheets for tracking.",
+      "technologies": [
+        "n8n",
+        "JavaScript",
+        "LLM APIs",
+        "Google Sheets API",
+        "Railway",
+        "Automation"
+      ],
+      "category": "Automation",
+      "featured": true
+    },
+    {
+      "id": "proj_7",
+      "title": "Deepfake Face Detection AI Agent with Vision–Language Pipeline",
+      "description": "Autonomous multi-stage detection pipeline integrating OpenCV artifact analysis, fine-tuned Vision–Language Model (VLM), and OpenAI-based verification. Trained on large-scale datasets achieving 89% validation accuracy, orchestrated via OpenAI Agent SDK and LangChain for workflow automation.",
+      "technologies": [
+        "Python",
+        "OpenAI Agent SDK",
+        "LangChain",
+        "VLM",
+        "OpenCV",
+        "Fine-Tuning"
+      ],
+      "category": "AI / ML",
+      "featured": true
+    },
+    {
+      "id": "proj_8",
+      "title": "EDIT Digital Onboarding Flutter App — Secure Identity Platform",
+      "description": "Streamlined 2-step customer onboarding app with multi-layered anti-fraud security: document authenticity verification (photocopy/screen replay/portrait substitution) and active/passive face liveness detection. Significantly reduces abandonment through optimized UX and robust validation.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "BLoC",
+        "Dio",
+        "Rive",
+        "Platform Channels"
+      ],
+      "category": "Mobile / Security",
+      "featured": true
+    },
+    {
+      "id": "proj_9",
+      "title": "Onboarding Federated Flutter Plugin — Native Cross-Platform Integration",
+      "description": "Published private federated plugin for consistent document/face capture across app ecosystem. Architected with MVVM Kotlin modules for Android, delivering scalable native performance while maintaining unified Flutter UI/UX and security standards.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Kotlin (Android)",
+        "MVVM Architecture",
+        "Federated Plugins"
+      ],
+      "category": "Mobile / Plugins",
+      "featured": false
+    },
+    {
+      "id": "proj_10",
+      "title": "Document Type Identification API — YOLOv11 Document AI Classifier",
+      "description": "End-to-end ML pipeline for automated classification of government onboarding documents such as passports and ID proofs. Utilized YOLOv11 with Label Studio for annotation and GPU-accelerated training on Google Colab, achieving 95%+ accuracy in production scenarios.",
+      "technologies": [
+        "Python",
+        "YOLO v11",
+        "OpenCV",
+        "Label Studio",
+        "Google Colab"
+      ],
+      "category": "AI / CV",
+      "featured": true
+    },
+    {
+      "id": "proj_11",
+      "title": "XARK - Construction Blueprint Analysis — Multimodal Generative AI for Architecture",
+      "description": "Cross-platform Flutter application leveraging Gemini Multimodal and GenKit for blueprint interpretation and Vastu Shastra-based improvement recommendations. Implements advanced prompt engineering for structured output generation and action-oriented insights.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "GenKit",
+        "Prompt Engineering",
+        "Gemini Multimodal"
+      ],
+      "category": "Mobile / AI",
+      "featured": true,
+      "videoDemoUrl": "https://youtube.com/shorts/fx0kRLrAYq4?feature=share",
+      "demoScreenshots": [
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766729355/xark_lnqtmx.jpg"
+      ]
+    },
+    {
+      "id": "proj_12",
+      "title": "Arabic–English Transliteration Agent — High-Accuracy Language Service",
+      "description": "FastAPI-based transliteration microservice using GPT-4o-mini and LangChain for multilingual OCR data with context-aware accuracy. Applied advanced prompt engineering and chain-of-thought reasoning for robust linguistic performance.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "OpenAI GPT-4o-mini",
+        "Prompt Engineering"
+      ],
+      "category": "AI / NLP",
+      "featured": true
+    },
+    {
+      "id": "proj_13",
+      "title": "Safe Weapon Use Detection — Real-Time Pose and Context Analysis System",
+      "description": "Developed a real-time CV system combining YOLO-based weapon detection with body pose estimation to assess usage safety. Generates alerts based on contextual threat patterns for surveillance or controlled environments.",
+      "technologies": [
+        "Python",
+        "OpenCV",
+        "YOLO",
+        "Pose Estimation",
+        "Deep Learning"
+      ],
+      "category": "AI / CV",
+      "featured": true,
+      "videoDemoUrl": "https://youtu.be/bnRY3wVX26k",
+      "demoScreenshots": []
+    },
+    {
+      "id": "proj_14",
+      "title": "SmartFace Attendance Platform — Multi-Stream Real-Time Recognition System",
+      "description": "High-performance attendance system processing multiple concurrent camera feeds for identity verification and unknown-person alerts. Designed modular architecture for efficient scalability and deployment.",
+      "technologies": [
+        "Python",
+        "Deep Learning",
+        "Computer Vision",
+        "Multi-Stream Processing"
+      ],
+      "category": "AI / CV",
+      "featured": true
+    },
+    {
+      "id": "proj_15",
+      "title": "AI Timesheet Telegram Agent — Multilingual Intent Parser for Workflow Automation",
+      "description": "Conversational AI agent parsing multilingual text (including Telugu) into structured JSON for timesheet entry automation. Built using LangChain, Claude LLM, and Telegram Bot API with integrated tool-calling for robust intent extraction.",
+      "technologies": [
+        "Python",
+        "LangChain",
+        "Claude LLM",
+        "Telegram Bot API",
+        "JSON Schema"
+      ],
+      "category": "AI / Chatbot",
+      "featured": true,
+      "videoDemoUrl": "https://youtube.com/shorts/6WYT3RMb-uc?feature=share",
+      "demoScreenshots": [
+        "https://res.cloudinary.com/dh07ur7yz/image/upload/v1766728255/telegram_demo_nqrdql.png"
+      ]
+    },
+    {
+      "id": "proj_16",
+      "title": "AI Virtual Indian Music Instruments — Real-Time Gesture-to-Music Generator",
+      "description": "Interactive computer vision app that converts hand and finger gestures into musical notes simulating Indian instruments like Tabla and Veena. Implemented gesture recognition via MediaPipe and OpenCV for latency-free music synthesis.",
+      "technologies": [
+        "Python",
+        "MediaPipe",
+        "OpenCV",
+        "Gesture Recognition"
+      ],
+      "category": "AI / CV",
+      "featured": true
+    },
+    {
+      "id": "proj_17",
+      "title": "IoT Rocket Ground Station — Hardware-in-the-Loop Control System",
+      "description": "Developed an IoT-enabled Flutter app interfaced with ESP8266 microcontroller for sending and monitoring rocket launch commands via Bluetooth. Designed real-time telemetry dashboard for hardware-in-the-loop operations.",
+      "technologies": [
+        "Flutter",
+        "IoT",
+        "ESP8266",
+        "Bluetooth",
+        "Dart"
+      ],
+      "category": "IoT / Mobile",
+      "featured": true,
+      "videoDemoUrl": "https://youtube.com/shorts/xqp_B1GDkjg?feature=share",
+      "demoScreenshots": []
+    }
+  ],
+  "education": [
+    {
+      "id": "edu_1",
+      "institution": "Pragati Engineering College",
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science and Engineering",
+      "startDate": "2014",
+      "endDate": "2018",
+      "gpa": "80.54%",
+      "achievements": [
+        "Winner of state level cyber security hackathon",
+        "Finalist of Smart India hackathon"
+      ]
+    }
+  ]
+}
