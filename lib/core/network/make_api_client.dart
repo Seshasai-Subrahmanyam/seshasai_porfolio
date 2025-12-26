@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart'; // For debugPrint
 import '../config/env.dart';
 import '../models/models.dart';
 
@@ -36,15 +37,15 @@ class MakeApiClient {
     _dio.interceptors.add(
       InterceptorsWrapper(
         onRequest: (options, handler) {
-          print('🌐 Request: ${options.method} ${options.uri}');
+          debugPrint('🌐 Request: ${options.method} ${options.uri}');
           handler.next(options);
         },
         onResponse: (response, handler) {
-          print('✅ Response: ${response.statusCode}');
+          debugPrint('✅ Response: ${response.statusCode}');
           handler.next(response);
         },
         onError: (error, handler) {
-          print('❌ Error: ${error.message}');
+          debugPrint('❌ Error: ${error.message}');
           handler.next(error);
         },
       ),

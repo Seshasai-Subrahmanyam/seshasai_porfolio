@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart'; // For debugPrint
 import 'package:flutter/services.dart';
 import '../config/env.dart';
 import '../models/models.dart';
@@ -39,12 +40,12 @@ class ResumeRepository {
             ? jsonDecode(response.data as String)
             : response.data;
         _cachedResume = ResumeModel.fromJson(jsonData as Map<String, dynamic>);
-        print('✅ Resume loaded from backend API');
+        debugPrint('✅ Resume loaded from backend API');
         return _cachedResume!;
       }
       throw Exception('Invalid response from API');
     } catch (e) {
-      print('⚠️ Failed to fetch from API, falling back to local: $e');
+      debugPrint('⚠️ Failed to fetch from API, falling back to local: $e');
       // Fallback to local assets
       return _loadResumeFromAssets();
     }
@@ -56,7 +57,7 @@ class ResumeRepository {
       final jsonString = await rootBundle.loadString('assets/resume.json');
       final jsonData = jsonDecode(jsonString) as Map<String, dynamic>;
       _cachedResume = ResumeModel.fromJson(jsonData);
-      print('📁 Resume loaded from local assets');
+      debugPrint('📁 Resume loaded from local assets');
       return _cachedResume!;
     } catch (e) {
       throw Exception('Failed to load resume: $e');

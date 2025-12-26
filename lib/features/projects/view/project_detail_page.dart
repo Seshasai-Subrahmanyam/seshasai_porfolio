@@ -78,9 +78,9 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
       });
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-              content: Text(
-                  'Unable to generate story. Please ensure the RAG server is running.')),
+          const SnackBar(
+              content:
+                  Text('Unable to generate story. Please try again later.')),
         );
       }
     }

@@ -6,10 +6,8 @@ class Env {
   Env._();
 
   /// Local RAG server URL for chat functionality
-  static const String ragServerUrl = String.fromEnvironment('RAG_SERVER_URL',
-      defaultValue:
-          "https://resume-rag-fastapi.onrender.com" //'http://localhost:8000',
-      );
+  static const String ragServerUrl =
+      "https://seshasai-portfolio-552829019648.asia-south2.run.app";
 
   /// Make.com webhook URL for availability status
   static const String makeAvailabilityUrl = String.fromEnvironment(

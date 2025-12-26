@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart'; // For debugPrint
 import '../config/env.dart';
 import '../models/rag_models.dart';
 
@@ -38,15 +39,15 @@ class RagApiClient {
     _dio.interceptors.add(
       InterceptorsWrapper(
         onRequest: (options, handler) {
-          print('🤖 RAG Request: ${options.method} ${options.uri}');
+          debugPrint('🤖 RAG Request: ${options.method} ${options.uri}');
           handler.next(options);
         },
         onResponse: (response, handler) {
-          print('✅ RAG Response: ${response.statusCode}');
+          debugPrint('✅ RAG Response: ${response.statusCode}');
           handler.next(response);
         },
         onError: (error, handler) {
-          print('❌ RAG Error: ${error.message}');
+          debugPrint('❌ RAG Error: ${error.message}');
           handler.next(error);
         },
       ),

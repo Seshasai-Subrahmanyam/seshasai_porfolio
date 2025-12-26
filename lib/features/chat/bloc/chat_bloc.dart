@@ -79,8 +79,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
           suggestedPrompts: _getFollowUpPrompts(state.persona)));
     } catch (e) {
       final errorMsg = ChatMessage.ai(
-          content:
-              'Sorry, JUNNU AI encountered an error. Please ensure the server is running.');
+          content: 'Sorry, something went wrong. Please try again later.');
       emit(state.copyWith(
           status: ChatStateStatus.error,
           messages: [...state.messages, errorMsg],
